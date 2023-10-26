@@ -1,3 +1,6 @@
+# To use FastAPI read 'README.md' file
+
+
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -46,4 +49,3 @@ def delete_book(book_id: int):
             books.remove(book)
             return {"message": "کتاب حذف شد"}
     return {"error": "کتاب مورد نظر یافت نشد"}
-    
